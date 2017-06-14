@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cta-buttons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <object data="../img/logo.svg"></object>
+        <ul class="menu">
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#">Програми</a></li>
+            <li><a href="#">Будинки</a></li>
+            <li><a href="#">Калькулятори</a></li>
+            <li><a href="#">Аналітика</a></li>
+            <li><a href="#">Корисно</a></li>
+            <li><a href="#">Куди звертатись</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <h2>Кнопки</h2>
+    <div class="button">
+        <div class="eff"></div>
+        <a href="#">ВИКЛИК ЕКСПЕРТА</a>
+    </div>
+    <div class="button2">
+        <div class="eff"></div>
+        <a href="#"><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp РОЗРАХУВАТИ</a>
+    </div>
+    <div class="button3">
+        <div class="eff"></div>
+        <a href="#">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</a>
+    </div>
+</div>
+<div class="container">
+    <h2>Форми</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <form id="expert">
+                <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
+                <label alt='ПІБ' placeholder='ПІБ'></label>
+                <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
+                <label alt='телефон' placeholder='телефон'></label>
+                <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
+                <label alt='адреса' placeholder='адреса'></label>
+                <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
+                <label alt='виды работ (не более 3х)' placeholder='виды работ (не более 3х)'></label>
+                <input type="submit" name="submit" class="submit action-button" value="ВИКЛИК ЕКСПЕРТА">
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control bfh-phone" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')">
+                    <label alt='телефон' placeholder='телефон'></label>
+                </div>
+                <input type="submit" name="submit" class="submit action-button" value="ЗАМОВИТИ КОНСУЛЬТАЦІЮ">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Таби/Таблиці</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">Паспорт</a></li>
+                <li><a href="#profile" data-toggle="tab">Лічильники</a></li>
+                <li><a href="#profile" data-toggle="tab">Ремонти</a></li>
+                <li><a href="#profile" data-toggle="tab">Аварії</a></li>
+                <li><a href="#profile" data-toggle="tab">Звернення</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="home">
+                    <table class="table table-striped table-hover ">
+                        <tbody>
+                        <tr>
+                            <td>Серія, No</td>
+                            <td>ММ-640</td>
+                        </tr>
+                        <tr>
+                            <td>ЖЕК, балансоутримувач</td>
+                            <td>КП "ЖЕК "Татарка"</td>
+                        </tr>
+                        <tr>
+                            <td>Адреса будинку</td>
+                            <td>вул. Нагорна, 12</td>
+                        </tr>
+                        <tr>
+                            <td>Рік будівництва</td>
+                            <td>1968</td>
+                        </tr>
+                        <tr>
+                            <td>Кількість під’їздів</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Кількість квартир</td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>Загальна площа будинку, м2</td>
+                            <td>6772.92</td>
+                        </tr>
+                        <tr>
+                            <td>Загальний обсяг, м3</td>
+                            <td>120768.5</td>
+                        </tr>
+                        <tr>
+                            <td>Житлова площа, м2</td>
+                            <td>4967.32</td>
+                        </tr>
+                        <tr>
+                            <td>Опалювальна площа, м2</td>
+                            <td>5867.4</td>
+                        </tr>
+                        <tr>
+                            <td>Товщина стін, м</td>
+                            <td>0.51</td>
+                        </tr>
+                        <tr>
+                            <td>Матеріал стін</td>
+                            <td>цегла</td>
+                        </tr>
+                        <tr>
+                            <td>Площа зовнішніх стін, м2</td>
+                            <td>315867.4</td>
+                        </tr>
+                        <tr>
+                            <td>Площа засклення, м2</td>
+                            <td>15864.14</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <span class="js-table-more">Більше параметрів</span>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <table class="table table-striped table-hover ">
+                        <tbody>
+                        <tr>
+                            <td>Опалення</td>
+                            <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Холодна вода</td>
+                            <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Гаряча вода</td>
+                            <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Електроенергія</td>
+                            <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Газ</td>
+                            <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Заголовки</h2>
+    <h1>h1 - teplo.org.ua</h1>
+    <h2>h2 - споживай тепло розумно</h2>
+    <h3>h3 - програма «Тепло»</h3>
+    <h4>h4 - З чого починати роботу</h4>
+    <h5>h5 - Дізнайтесь як отримати фінансування</h5>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+        var link = $('.js-table-more');
+
+        $(link).on('click', function(){
+
+            if ($(this).siblings('table').hasClass('more')) {
+                $(this).siblings('table').removeClass('more');
+                $(this).text('Більше параметрів');
+
+                return
+            }
+
+            $(this).text('Меньше параметрів');
+            $(this).siblings('table').addClass('more');
+        });
+
+    });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
