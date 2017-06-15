@@ -9,12 +9,14 @@ html, body {
     outline-offset: 0;
 }
 
-h1 {
-    position: absolute;
+
+/* ----------------- image on main page with text ------------------- */
+.img-container h1 {
+    /*position: absolute;*/
     text-align: center;
     color: #353a3a;
-    padding-left: 3em;
-    padding-right: 3em;
+    /*padding-left: 3em;*/
+    /*padding-right: 3em;*/
     z-index: 10;
     width: 100%;
     margin: 0 auto;
@@ -23,17 +25,19 @@ h1 {
     font-size: 72px;
 }
 
-h1>span:nth-child(1) {
+.img-container h1>span:nth-child(1) {
     color: #ff5014;
 }
 
-h1>span:nth-child(2) {
+.img-container h1>span:nth-child(2) {
     color: #ffb74d;
 }
 
-h1>span:nth-child(3) {
+.img-container h1>span:nth-child(3) {
     color: #00bc8e;
 }
+
+/* ------------------ headings ------------------ */
 
 h2 {
     font-size: 30px;
@@ -61,6 +65,8 @@ h2:first-child:after {
     width: 100%;
     background-color: #ffb74d;
 }
+
+/* ------------------- links ----------------- */
 
 a {
     color: #00bc8e;
@@ -90,7 +96,10 @@ object {
 }
 
 .pipes {
+    position: absolute;
     opacity: .5;
+    left: 0;
+    right: 0;
 }
 
 .pipe1 {
@@ -177,6 +186,11 @@ object {
     position: relative;
     top: 170px;
     padding-bottom: 100px;
+}
+
+.txt-main {
+    padding-top: 200px;
+    text-align: center;
 }
 
 
