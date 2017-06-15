@@ -2,6 +2,7 @@ html, body {
     font-family: 'Proxima Nova';
     color: #353a3a;
     font-size: 16px;
+    background-color: rgba(239, 239, 239, 0.86);
 }
 
 :active, :hover, :focus {
@@ -107,7 +108,6 @@ object {
     width: 320px;
     z-index: 1;
     padding-top: 80px;
-    margin-left: -15px;
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
 }
@@ -120,10 +120,10 @@ object {
     background-size: cover;
     content: '';
     display: inline-block;
-    width: 78%;
+    width: 81%;
     height: 15px;
     top: 620px;
-    left: 235px;
+    left: 218px;
     z-index: -1;
     position: absolute;
     float: none;
@@ -137,7 +137,6 @@ object {
     width: 249px;
     z-index: 1;
     padding-top: 80px;
-    margin-right: -15px;
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
 }
@@ -191,6 +190,12 @@ object {
 .txt-main {
     padding-top: 200px;
     text-align: center;
+}
+
+.txt-main>p {
+    padding-top: 80px;
+    font-size: 22px;
+    line-height: 1.6;
 }
 
 
