@@ -26,7 +26,20 @@
 	.st20{fill:#E2E3E4;}
 	.st21{fill:#D67C61;}
 	.st22{fill:#FFCF78;}
-	.st23{fill:#E7B057;}
+	.st23{
+		fill:#E7B057;
+		animation: gear 5s linear infinite;
+		-webkit-animation: gear 5s linear infinite;
+		}
+		@-webkit-keyframes gear {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	}
 	.st24{fill:#FFDE8F;}
 	.st25{fill:#80301A;}
 	.st26{fill:#FDC26B;}
