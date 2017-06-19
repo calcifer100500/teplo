@@ -30,6 +30,80 @@
         }
 }
 
+    #valve{
+        animation: vlv 2s linear infinite;
+        transform-origin: 50% 50%;
+        display: inline-block;
+    }
+    @keyframes vlv {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(120deg);
+        }
+        80% {
+                transform: rotate(50deg);
+            }
+}
+
+    #rychag{
+        animation: rcg 5s linear infinite;
+        display: inline-block;
+    }
+    @keyframes rcg {
+        0% {
+            transform: translateY(0px)
+        }
+        50% {
+            transform: translateY(30px)
+        }
+}
+
+    #rychag2{
+        animation: rchg 4.5s linear infinite;
+        display: inline-block;
+    }
+    @keyframes rchg {
+        10% {
+            transform: translateY(10px);
+        }
+
+        50% {
+            transform: translateY(60px);
+        }
+}
+    #rychag3{
+        animation: ryc 4s linear infinite;
+        display: inline-block;
+    }
+    @keyframes ryc {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(15px);
+        }
+}
+    #arrow{
+        animation: arr 1s linear infinite;
+        transform-origin: 50% 50%;
+        display: inline-block;
+    }
+    @keyframes arr {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(120deg);
+        }
+        80% {
+            transform: rotate(50deg);
+            }
+}
+
+
 	.st0{fill:#A1C3AB;}
 	.st1{fill:#FAAF61;}
 	.st2{fill:#F69E4E;}
@@ -225,7 +299,7 @@
 		c0-0.4,0-0.8,0-1.2l0,0c0-5.6-0.1-15.8-0.1-17.9V449c1.1-0.3,2.2-0.7,3.2-1.3l1.6,1.5l0.4,0.4c0,0,0.7,0.7,1.8,1.8
 		c0.4,0.4,0.9,0.9,1.4,1.4v-7.3l-1.1-1.1l-0.3-0.3l-0.1-0.1c0-0.1,0.1-0.1,0.1-0.2c0.3-0.5,0.6-1,0.8-1.6c0.3-0.8,0.5-1.6,0.6-2.4
 		c0.1-0.4,0.1-0.9,0.1-1.3c0,0,0,0,0,0.1c0-0.1,0-0.2,0-0.3C233.7,437.7,233.6,437.2,233.5,436.6z"/>
-	<g id="gear">
+	<g id="valve">
 		<polygon class="st6" points="250.8,410.9 247.2,407.4 246.8,407.8 241.3,413.4 230.1,424.5 225.1,429.5 225.1,398.2 220.1,398.2 
 			220.1,429.5 198,407.4 194.5,410.9 194.9,411.3 211.7,428.1 219.1,435.5 211.7,443 194.9,459.7 194.5,460.1 198,463.6 
 			220.1,441.5 220.1,472.8 225.1,472.8 225.1,441.5 230.1,446.5 246.8,463.2 247.2,463.6 250.8,460.1 226.2,435.5 		"/>
@@ -482,7 +556,7 @@
 		c0.2,0.2,0.4,0.4,0.6,0.6c0.7,0.7,1.3,1.5,1.8,2.3C244.5,710.1,245.1,712.2,245.1,714.3z"/>
 	<path class="st33" d="M317.5,714.3V800H294v-85.7c0-3.3,1.4-6.3,3.6-8.4c0.6-0.6,1.2-1.1,1.9-1.5c1.8-1.2,4-1.8,6.3-1.8
 		c3.3,0,6.2,1.3,8.4,3.5C316.2,708.2,317.5,711.1,317.5,714.3z"/>
-	<g>
+	<g id="rychag2">
 		<path class="st34" d="M314.1,679.1v54.7c0,3.7-3,6.7-6.7,6.7h-3.2c-3.7,0-6.7-3-6.7-6.7v-54.7H314.1z"/>
 		<path class="st35" d="M314.1,667.2v20.6c-2.6,1.1-5.4,1.7-8.4,1.7c-2.9,0-5.7-0.6-8.2-1.7v-20.7h16.6V667.2z"/>
 		<g>
@@ -492,7 +566,7 @@
 			<circle class="st36" cx="300.2" cy="653.4" r="7.8"/>
 		</g>
 	</g>
-	<g>
+	<g id="rychag">
 		<path class="st34" d="M241.7,705.5v54.7c0,3.7-3,6.7-6.7,6.7h-3.2c-3.7,0-6.7-3-6.7-6.7v-54.7H241.7z"/>
 		<path class="st35" d="M241.7,693.5v20.6c-2.6,1.1-5.4,1.7-8.4,1.7c-2.9,0-5.7-0.6-8.2-1.7v-20.7h16.6V693.5z"/>
 		<g>
@@ -502,7 +576,7 @@
 			<circle class="st36" cx="227.8" cy="679.8" r="7.8"/>
 		</g>
 	</g>
-	<g>
+	<g id="rychag3">
 		<path class="st34" d="M169.3,736.9v54.7c0,3.7-3,6.7-6.7,6.7h-3.2c-3.7,0-6.7-3-6.7-6.7v-54.7H169.3z"/>
 		<path class="st35" d="M169.3,724.9v20.6c-2.6,1.1-5.4,1.7-8.4,1.7c-2.9,0-5.7-0.6-8.2-1.7v-20.7h16.6V724.9z"/>
 		<g>
