@@ -41,6 +41,19 @@ html, body {
 
 /* ------------------ headings ------------------ */
 
+.headings {
+    line-height: 1.5;
+}
+
+.headings h2:first-child:after {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
 h2 {
     font-size: 30px;
 }
@@ -66,6 +79,7 @@ h2:first-child:after {
     height: 2px;
     width: 100%;
     background-color: #ffb74d;
+    margin-bottom: 10px;
 }
 
 /* ------------------- links ----------------- */
