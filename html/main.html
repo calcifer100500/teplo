@@ -5,6 +5,8 @@
     <title>cta-buttons</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -40,7 +42,7 @@
         <div class="col-md-2"></div>
     </div>
 </div>
-<div class="container block-inf">
+<div class="container cont-pad block-inf">
     <div class="row">
         <div class="col-md-1">
             <object data="../img/valve.svg"></object>
@@ -64,14 +66,13 @@
         </div>
     </div>
 </div>
-<div class="container programs">
+<div class="container cont-pad programs">
     <div class="row">
         <div class="col-md-4">
             <a href="#"><div class="program">
                 <h3>Програма 70/30 <br>
                     Енергоефективність</h3>
-                <p>Конкурсна програма комплексного уте-
-                    плення для ОСББ та ЖБК: 70% витрат
+                <p>Конкурсна програма комплексного утеплення для ОСББ та ЖБК: 70% витрат
                     компенсує держава, 30% - мешканці</p>
             </div></a>
         </div>
@@ -79,8 +80,7 @@
             <a href="#"><div class="program">
                 <h3>Програма 70/30 <br>
                     Капітальний ремонт</h3>
-                <p>Конкурсна програма комплексного уте-
-                    плення для всіх: 70% витрат компенсує
+                <p>Конкурсна програма комплексного утеплення для всіх: 70% витрат компенсує
                     держава, 30% - мешканці</p>
             </div></a>
         </div>
@@ -96,15 +96,62 @@
         <a href="#"><span>Усі програми підтримки енергоефективності</span></a>
     </div>
 </div>
-<div class="container">
+<div class="container cont-pad">
     <div class="row">
+        <div class="slider">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="scale-building">
+                                <object data="../img/class-b.svg"></object>
+                                <p><span>вул. Нагорна, 12</span><br>
+                                    серія ММ-640</p>
+                                <p><span>4.33 грн/м2</span><br>
+                                    квартира 80 м2 – 346 грн/міс</p>
+                                <ul class="icons">
+                                    <li>
+                                        <object data=""></object></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, consectetur consequuntur dicta, eaque earum est fugit, hic laborum maxime minus odio omnis perspiciatis qui quibusdam quod recusandae repudiandae ut.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, consectetur consequuntur dicta, eaque earum est fugit, hic laborum maxime minus odio omnis perspiciatis qui quibusdam quod recusandae repudiandae ut.</div>
+                        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, consectetur consequuntur dicta, eaque earum est fugit, hic laborum maxime minus odio omnis perspiciatis qui quibusdam quod recusandae repudiandae ut.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            variableWidth: true,
+            slidesToShow: 1,
+            dots: false,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            arrows: true
+        });
+    });
+</script>
 </body>
 </html>

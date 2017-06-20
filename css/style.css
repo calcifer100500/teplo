@@ -202,8 +202,7 @@ object {
     }
 }
 
-.container {
-    position: relative;
+.cont-pad {
     padding-top: 100px;
 }
 
@@ -611,8 +610,7 @@ i.fa-minus {
     text-align: center;
     border: 2px solid #ffb74d;
     padding: 5px 30px 10px 30px;
-    height: 180px;
-    colo
+    min-height: 200px;
 }
 
 .programs a>span {
@@ -623,5 +621,40 @@ i.fa-minus {
 
 .programs a>span:hover {
     border-bottom: 1px solid #005325;
+}
 
+.programs-green {
+    border: 2px solid green;
+}
+
+.programs-green a>span:hover {
+    border-bottom: 1px solid #005325;
+}
+
+/*  ------------- slider ----------------   */
+.slider {
+    min-height: 300px;
+}
+
+.slider .slick-list {
+    min-height: 300px;
+}
+
+.slider .slide > div {
+    background-color: #dadada;
+    min-height: 300px;
+    display: inline-block;
+}
+
+.slider .slide > div:after {
+    content: '';
+    display: table;
+    height: 0;
+    clear: both;
+}
+
+.scale-building object{
+    width: 230px;
+    position: static;
+    padding-bottom: 25px;
 }
