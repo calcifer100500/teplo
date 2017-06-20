@@ -9,7 +9,6 @@ html, body {
     outline-offset: 0;
 }
 
-
 /* ----------------- image on main page with text ------------------- */
 .img-container {
     background-color: rgb(249, 233, 227);
@@ -197,10 +196,15 @@ object {
     padding-bottom: 17px;
 }
 
+@media (min-width: 1880px) {
+    .container {
+        width: 85%;
+    }
+}
+
 .container {
     position: relative;
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .buttons {
@@ -593,7 +597,30 @@ i.fa-minus {
     color: #ff5014;
 }
 
-/* --------------------- infoblock on main page ------------------------- */
+/* --------------------- blocks on main page ------------------------- */
 .block-inf object {
     width: 75px;
+}
+
+.block-inf .button2 {
+    float: right;
+    margin-top: 30px;
+}
+
+.program {
+    text-align: center;
+    border: 2px solid #ffb74d;
+    padding: 5px 30px 10px 30px;
+    height: 180px;
+}
+
+.programs a {
+    float: right;
+    padding-top: 30px;
+    margin-right: 15px;
+}
+
+.programs a:hover {
+    border-bottom: 1px solid #005325;
+
 }
