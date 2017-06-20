@@ -199,7 +199,13 @@ object {
 
 .container {
     position: relative;
-    top: 170px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.buttons {
+    position: relative;
+    top: 80px;
     padding-bottom: 100px;
 }
 
@@ -585,4 +591,9 @@ i.fa-plus {
 
 i.fa-minus {
     color: #ff5014;
+}
+
+/* --------------------- infoblock on main page ------------------------- */
+.block-inf object {
+    width: 75px;
 }
