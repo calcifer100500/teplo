@@ -653,8 +653,33 @@ i.fa-minus {
     clear: both;
 }
 
-.scale-building object{
+.scale-building {
+    position: relative;
+}
+
+.class-enrg{
     width: 230px;
     position: static;
     padding-bottom: 25px;
+}
+
+.icons {
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    right: 20px;
+}
+
+.icons li {
+    height: 35px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.icons li:last-child {
+    margin-bottom: 0;
+}
+
+.icons li > object {
+    height: 35px;
 }
