@@ -614,13 +614,13 @@ i.fa-minus {
     height: 180px;
 }
 
-.programs a {
+.programs a>span {
     float: right;
     padding-top: 30px;
     margin-right: 15px;
 }
 
-.programs a:hover {
+.programs a>span:hover {
     border-bottom: 1px solid #005325;
 
 }
