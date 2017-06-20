@@ -105,7 +105,6 @@
 
     #cloudy{
         animation: cld 1.2s ease-out infinite;
-        display: inline-block;
         opacity: 0;
     }
     @keyframes cld {
@@ -119,7 +118,6 @@
 
     #cloudy2{
             animation: cdy 1.5s 2s ease-out infinite;
-            display: inline-block;
             opacity: 0;
         }
         @keyframes cdy {
