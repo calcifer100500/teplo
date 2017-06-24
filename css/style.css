@@ -756,6 +756,98 @@ i.fa-minus {
 }
 
 .compare-btn {
-    margin-top: 30px;
+    margin-top: 40px;
     left: 37%;
+}
+
+/* ----------- counter main page ------------- */
+.row-counter {
+    background-color: #f9e9e3;
+    min-height: 265px;
+}
+
+.counter {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff7449;
+    text-align: center;
+    margin-top: 40px;
+    white-space: nowrap;
+}
+
+.counter:before {
+    content: url("../img/valve-half.png");
+    display: block;
+    height: 45px;
+}
+
+.row-counter p {
+    text-align: center;
+}
+
+/* --------------- graphic main page -------------------- */
+
+.graphic-cont h3{
+    margin-top: -20px;
+    margin-bottom: 70px;
+}
+
+.graphic-cont img {
+    max-width: 100%;
+}
+
+/* ---------- materials on main page ------------ */
+.material {
+    border-color: #00bd8d;
+    padding-top: 10px;
+}
+
+/* ---------- partners main page ---------------- */
+.partners h3 {
+    margin-top: -20px;
+    margin-bottom: 70px;
+}
+
+.partners {
+    height: 200px;
+    line-height: 200px;
+}
+
+.partners img {
+    vertical-align: middle;
+}
+
+/* ---------------- footer ----------------- */
+footer {
+    position: relative;
+    margin-top: 300px;
+    padding-top: 30px;
+    background: #f9e9e3;
+    border-top: 2px solid #ffb74d;
+    width: 100%;
+    height: 380px;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.footer h3 {
+    left: 50px;
+}
+
+.footer h3>span:nth-child(1) {
+    color: #ff5014;
+}
+
+.footer h3>span:nth-child(2) {
+    color: #ffb74d;
+}
+
+.footer h3>span:nth-child(3) {
+    color: #00bc8e;
+}
+
+.footer object {
+    height: 90px;
+    top: -32px;
 }
