@@ -104,7 +104,7 @@ a:focus, a:hover {
 
 /* -----------------------  images  -------------------------*/
 
-object {
+.logo {
     position: absolute;
     width: 120px;
     z-index: 9;
@@ -195,12 +195,6 @@ object {
     transition: 0.2s ease;
     border-bottom: 2px solid #ff5014;
     padding-bottom: 17px;
-}
-
-@media (min-width: 1880px) {
-    .container {
-        width: 85%;
-    }
 }
 
 .cont-pad {
@@ -665,7 +659,6 @@ i.fa-minus {
 }
 
 .slider .slide > div {
-    background-color: #dadada;
     min-height: 300px;
     display: inline-block;
 }
@@ -679,6 +672,24 @@ i.fa-minus {
 
 .scale-building {
     position: relative;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px #949493;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.vul {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.grn {
+    font-size: 36px;
+    color: #00bd8d;
+}
+.grn-f {
+    font-size: 36px;
+    color: #e95225;
 }
 
 .class-enrg{
@@ -690,14 +701,14 @@ i.fa-minus {
 .icons {
     position: absolute;
     list-style-type: none;
-    top: 0;
+    top: 20px;
     right: 20px;
 }
 
 .icons li {
     height: 35px;
     display: block;
-    margin-bottom: 5px;
+    margin-top: 18px;
 }
 
 .icons li:last-child {
@@ -708,3 +719,43 @@ i.fa-minus {
     height: 35px;
 }
 
+.icon {
+    position: absolute;
+    left: 35%;
+    top: 110px;
+    width: 58px;
+}
+
+.slick-prev.prev,
+.slick-next.next {
+    background-color: #dadada;
+    width: 40px;
+    height: 25px;
+    z-index: 10;
+}
+
+.slick-prev.prev object,
+.slick-next.next object {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+.slick-prev::before {
+    content: url("../img/prev.png");
+    display: block;
+    margin-left: -50px;
+}
+.slick-next::before {
+    content: url("../img/next.png");
+    margin-right: -50px;
+}
+
+.compare-btn {
+    margin-top: 30px;
+    left: 37%;
+}

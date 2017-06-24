@@ -13,7 +13,7 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <object data="../img/logo6.svg"></object>
+        <object class="logo" data="../img/logo6.svg"></object>
         <ul class="menu">
             <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
             <li><a href="#">Програми</a></li>
@@ -103,13 +103,13 @@
             <div class="slide">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="scale-building">
                                 <object class="class-enrg" data="../img/class-b.svg"></object>
-                                <p><span>вул. Нагорна, 12</span><br>
+                                <p><span class="vul">вул. Нагорна, 12</span><br>
                                     серія ММ-640</p>
-                                <p><span>4.33 грн/м2</span><br>
-                                    квартира 80 м2 – 346 грн/міс</p>
+                                <p><span class="grn">4.33 грн/м<sup><small>2</small></sup></span><br>
+                                    квартира 80 м<sup><small>2</small></sup> – 346 грн/міс</p>
                                 <ul class="icons">
                                     <li>
                                         <object data="../img/counter.svg"></object></li>
@@ -119,23 +119,64 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, consectetur consequuntur dicta, eaque earum est fugit, hic laborum maxime minus odio omnis perspiciatis qui quibusdam quod recusandae repudiandae ut.</div>
+                        <div class="col-md-2"><object class="icon" data="../img/balance.svg"></object></div>
+                        <div class="col-md-5">
+                            <div class="scale-building">
+                                <object class="class-enrg" data="../img/class-f.svg"></object>
+                                <p><span class="vul">вул. Нагорна, 14</span><br>
+                                    серія ММ-640</p>
+                                <p><span class="grn grn-f">9.12 грн/м<sup><small>2</small></sup></span><br>
+                                    квартира 80 м<sup><small>2</small></sup> – 346 грн/міс</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="icon"></div>
+
             <div class="slide">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, consectetur consequuntur dicta, eaque earum est fugit, hic laborum maxime minus odio omnis perspiciatis qui quibusdam quod recusandae repudiandae ut.</div>
-                        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, consectetur consequuntur dicta, eaque earum est fugit, hic laborum maxime minus odio omnis perspiciatis qui quibusdam quod recusandae repudiandae ut.</div>
+                        <div class="col-md-5">
+                            <div class="scale-building">
+                                <object class="class-enrg" data="../img/class-b.svg"></object>
+                                <p><span class="vul">вул. Нагорна, 12</span><br>
+                                    серія ММ-640</p>
+                                <p><span class="grn">4.33 грн/м<sup><small>2</small></sup></span><br>
+                                    квартира 80 м<sup><small>2</small></sup> – 346 грн/міс</p>
+                                <ul class="icons">
+                                    <li>
+                                        <object data="../img/counter.svg"></object></li>
+                                    <li><object data="../img/frame.svg"></object></li>
+                                    <li><object data="../img/light-bulb.svg"></object></li>
+                                    <li><object data="../img/pipe.svg"></object></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2"><object class="icon" data="../img/balance.svg"></object></div>
+                        <div class="col-md-5">
+                            <div class="scale-building">
+                                <object class="class-enrg" data="../img/class-f.svg"></object>
+                                <p><span class="vul">вул. Нагорна, 14</span><br>
+                                    серія ММ-640</p>
+                                <p><span class="grn grn-f">9.12 грн/м<sup><small>2</small></sup></span><br>
+                                    квартира 80 м<sup><small>2</small></sup> – 346 грн/міс</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="button2 compare-btn">
+            <div class="eff"></div>
+            <a href="#"><i class="fa fa-balance-scale" aria-hidden="true"></i>&nbsp ПОРІВНЯТИ БУДИНКИ</a>
+        </div>
+    </div>
 </div>
+
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -151,7 +192,7 @@
             infinite: true,
             autoplay: false,
             autoplaySpeed: 5000,
-            arrows: true
+            arrows: true,
         });
     });
 </script>
