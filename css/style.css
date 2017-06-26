@@ -673,7 +673,7 @@ i.fa-minus {
 .scale-building {
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 10px 30px #949493;
+    box-shadow: 0px 5px 15px #949493;
     padding: 15px;
     margin-top: 15px;
 }
@@ -827,12 +827,16 @@ footer {
     border-top: 2px solid #ffb74d;
     width: 100%;
     height: 380px;
-    font-size: 14px;
     z-index: 10;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .footer h3 {
     left: 50px;
+    font-size: 30px;
 }
 
 .footer h3>span:nth-child(1) {
@@ -850,4 +854,53 @@ footer {
 .footer object {
     height: 90px;
     top: -32px;
+}
+
+.foot {
+    margin-left: 30px;
+    top: -15px;
+}
+
+.foot a:hover{
+    text-decoration: underline;
+}
+
+.foot p {
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+.menu-footer {
+    list-style-type: none;
+    line-height: 1.9;
+    margin-top: 30px;
+    margin-left: -38px;
+}
+
+.prog {
+    margin-top: 35px;
+}
+
+.prog a {
+     font-size: 18px;
+     color: #353a3a;
+}
+
+.prog a:hover {
+    color: #00bd8d;
+    text-decoration: underline;
+}
+
+.prog p {
+    margin-top: 130px;
+    font-size: 14px;
+}
+
+.prog > p > a {
+     color: #00bd8d;
+     font-size: 16px;
+}
+
+.prog > p > a:hover {
+    color: #005325;
 }
