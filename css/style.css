@@ -9,6 +9,10 @@ html, body {
     outline-offset: 0;
 }
 
+.relative {
+    position: relative;
+}
+
 /* ----------------- image on main page with text ------------------- */
 .img-container {
     background-color: rgb(249, 233, 227);
@@ -628,7 +632,202 @@ i.fa-minus {
     padding: 5px 30px 10px 30px;
     min-height: 200px;
     color: #353a3a;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
+
+@keyframes bottomright {
+    0% {
+        width: 0;
+        height: 0;
+        padding-top: 0;
+        visibility: visible;
+    }
+    25% {
+        width: 100%;
+        height: 0;
+        padding-top: 0;
+        visibility: visible;
+    }
+    50% {
+        height: 100%;
+        width: 100%;
+        visibility: visible;
+    }
+    75% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes revbottomright {
+    0% {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+    }
+    25% {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+    }
+    50% {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+    }
+    75% {
+        width: 100%;
+        height: 0;
+        padding-top: 0;
+        visibility: visible;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        padding-top: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes topleft {
+    0% {
+        width: 0;
+        height: 0;
+        padding-bottom: 0;
+        visibility: hidden;
+    }
+    25% {
+        width: 0;
+        height: 0;
+        padding-bottom: 0;
+        visibility: hidden;
+    }
+    50% {
+        width: 0;
+        height: 0;
+        padding-bottom: 0;
+        visibility: hidden;
+    }
+    75% {
+        width: 100%;
+        height: 0;
+        padding-bottom: 0;
+        visibility: visible;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes revtopleft {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+    25% {
+        width: 100%;
+        height: 0;
+        padding-bottom: 0;
+        visibility: visible;
+    }
+    50% {
+        width: 0;
+        height: 0;
+        padding-bottom: 0;
+        visibility: hidden;
+    }
+    75% {
+        width: 0;
+        height: 0;
+        padding-bottom: 0;
+        visibility: hidden;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        padding-bottom: 0;
+        visibility: hidden;
+    }
+}
+
+.program:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    padding-right: 5px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #ffb74d;
+    border-right: 2px solid #ffb74d;
+    visibility: hidden;
+}
+
+.program:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #ffb74d;
+    border-left: 2px solid #ffb74d;
+    visibility: hidden;
+}
+
+.program:hover:before {
+    animation: topleft 0.9s ease-in-out forwards;
+}
+
+.program:hover:after {
+    animation: bottomright 0.9s ease-in-out forwards;
+}
+
+.program.active:before {
+    animation: revtopleft 0.9s ease-in-out forwards;
+}
+
+.program.active:after {
+    animation: revbottomright 0.9s ease-in-out forwards;
+}
+
+.program.active:before,
+.program.active:after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.program.temp:before, .program.temp:after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.program:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari */
+    transform: scale(1.05);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    border: transparent;
+}
+
 
 .programs a>span {
     float: right;
@@ -726,6 +925,14 @@ i.fa-minus {
     width: 58px;
 }
 
+.slick-next {
+    right: 0px;
+}
+
+.slick-prev {
+    left: 0px;
+}
+
 .slick-prev.prev,
 .slick-next.next {
     background-color: #dadada;
@@ -776,6 +983,10 @@ i.fa-minus {
     white-space: nowrap;
 }
 
+.counter i {
+    margin-left: 5px;
+}
+
 .counter:before {
     content: url("../img/valve-half.png");
     display: block;
@@ -801,6 +1012,14 @@ i.fa-minus {
 .material {
     border-color: #00bd8d;
     padding-top: 10px;
+}
+
+.material:before {
+    border-color: #00bd8d;
+}
+
+.material:after {
+    border-color: #00bd8d;
 }
 
 /* ---------- partners main page ---------------- */

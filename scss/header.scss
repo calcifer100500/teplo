@@ -1,0 +1,9 @@
+/*----------------------- Header ------------------------*/
+
+.header {
+  background-color: $main-color;
+  &__inner {
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+}

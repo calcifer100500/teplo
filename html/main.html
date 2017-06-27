@@ -177,24 +177,24 @@
 <div class="container-fluid cont-pad">
     <div class="row row-counter">
         <div class="container">
-            <div class="row">
+            <div class="row" id="count-up">
                 <div class="col-md-3">
-                    <span class="counter">11375</span>
-                    <p>громадян долучилось
-                        до програм</p>
+                        <span class="counter" data-count="11375">11300</span>
+                        <p>громадян долучилось
+                            до програм</p>
                 </div>
                 <div class="col-md-3">
-                    <span class="counter">1084</span>
+                    <span class="counter" data-count="1084">1009</span>
                     <p>вже будинки
                         економлять тепло</p>
                 </div>
                 <div class="col-md-3">
-                    <span class="counter">1 550 000</span>
+                    <span class="counter" data-count="1550000">1549925</span>
                     <p>грн виділено з бюджету на
                         енергоефективність у 2017 році</p>
                 </div>
                 <div class="col-md-3">
-                    <span class="counter">875 000</span>
+                    <span class="counter" data-count="875000">874925</span>
                     <p>грн використано на
                         енергоефективність
                         у 2017 році</p>
@@ -267,21 +267,21 @@
             <div class="col-md-1">
                 <object class="logo" data="../img/logo6.svg"></object>
             </div>
-             <div class="col-md-2 foot">
-                 <h3><span>t</span>eplo.<span>o</span>rg.<span>u</span>a</h3>
-                 <ul class="menu-footer">
-                     <li><a href="#">Програми</a></li>
-                     <li><a href="#">Будинки</a></li>
-                     <li><a href="#">Калькулятори</a></li>
-                     <li><a href="#">Аналітика</a></li>
-                     <li><a href="#">Корисно</a></li>
-                     <li><a href="#">Куди звертатись</a></li>
-                 </ul>
-                 <p>© 2016-2017</p>
+             <div class="col-md-4">
+                 <div class="foot relative">
+                     <h3><span>t</span>eplo.<span>o</span>rg.<span>u</span>a</h3>
+                     <ul class="menu-footer">
+                         <li><a href="#">Програми</a></li>
+                         <li><a href="#">Будинки</a></li>
+                         <li><a href="#">Калькулятори</a></li>
+                         <li><a href="#">Аналітика</a></li>
+                         <li><a href="#">Корисно</a></li>
+                         <li><a href="#">Куди звертатись</a></li>
+                     </ul>
+                     <p>© 2016-2017</p>
+                 </div>
              </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-5 prog">
+            <div class="col-md-7 prog">
                 <ul class="menu-footer">
                     <li><a href="#">Програма 70/30. Енергоефективність</a></li>
                     <li><a href="#">Програма 70/30. Капітальний ремонт</a></li>
@@ -293,12 +293,30 @@
     </div>
 </footer>
 
+<script>
+    $(document).ready(function() {
+
+        $('a').hoverIntent(function() {
+                $(this).removeClass('active');
+                setTimeout(function(){
+                    $(this).addClass('temp');
+                },500);
+            },
+            function() {
+                $(this).addClass('active');
+                $(this).removeClass('temp');
+            }
+        );
+
+    });
+</script>
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 <script>
     $(document).ready(function(){
@@ -313,5 +331,41 @@
         });
     });
 </script>
+
+<script>
+    var a = 0;
+    $(window).scroll(function() {
+
+        var oTop = $('#count-up').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                        countNum: countTo
+                    },
+
+                    {
+
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+            });
+            a = 1;
+        }
+
+    });
+</script>
+
 </body>
 </html>
