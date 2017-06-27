@@ -110,7 +110,7 @@ a {
 
 a:focus, a:hover {
     color: #005325;
-    text-decoration: none;
+    text-decoration: underline;
     border-bottom: 1px solid #005325;
     cursor: pointer;
     -webkit-transition: 0.2s ease;
@@ -206,6 +206,7 @@ a:focus, a:hover {
 
 .menu>li>a:hover, .menu>li>a:active, .menu>li>a:focus {
     color: #ff5014;
+    text-decoration: none;
     -webkit-transition: 0.2s ease;
     -moz-transition: 0.2s ease;
     -ms-transition: 0.2s ease;
@@ -653,6 +654,11 @@ i.fa-minus {
     transition: .5s ease-in-out;
 }
 
+.programs a:hover{
+    text-decoration: none;
+    color: #353a3a;
+}
+
 @keyframes bottomright {
     0% {
         width: 0;
@@ -850,8 +856,13 @@ i.fa-minus {
 }
 
 .programs a>span:hover {
-   /* border-bottom: 1px solid #005325;*/
     text-decoration: underline;
+    color: #005325;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .programs-green {
@@ -886,9 +897,13 @@ i.fa-minus {
 .scale-building {
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 5px 15px #949493;
+    box-shadow: 0px 5px 15px #cececa;
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 5px;
+}
+
+.scale-building > a{
+    line-height: 43px;
 }
 
 .vul {
@@ -908,7 +923,7 @@ i.fa-minus {
 .class-enrg{
     width: 230px;
     position: static;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 
 .icons {
