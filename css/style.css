@@ -1,7 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     font-family: 'Proxima Nova';
     color: #353a3a;
     font-size: 16px;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+.content {
+    padding-bottom: 620px;
 }
 
 :active, :hover, :focus {
@@ -225,7 +239,7 @@ a:focus, a:hover {
 }
 
 
-.container-fluid:first-child{
+.menu-header {
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -1038,9 +1052,10 @@ i.fa-minus {
 }
 
 /* ---------------- footer ----------------- */
-footer {
-    position: relative;
-    margin-top: 300px;
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
     padding-top: 30px;
     background: #f9e9e3;
     border-top: 2px solid #ffb74d;
