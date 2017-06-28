@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html, body {
     font-family: 'Proxima Nova';
     color: #353a3a;
@@ -239,6 +243,13 @@ a:focus, a:hover {
     padding-right: 5%;
 }
 
+@media screen and (max-width: 991px) {
+    .txt-main>p {
+        padding-left: 27%;
+        padding-right: 24%;
+    }
+}
+
 
 .menu-header {
     position: fixed;
@@ -257,6 +268,12 @@ a:focus, a:hover {
     top: 30px;
     color: #cbd2d2;
     font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+    .scale-icon {
+        right: 5%;
+    }
 }
 
 .scale-icon:after {
@@ -654,6 +671,24 @@ i.fa-minus {
     transition: .5s ease-in-out;
 }
 
+@media screen and (max-width: 1200px) {
+    .program {
+        min-height: 225px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .third-program-sm {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .programs a>span {
+        margin-top: 90px;
+    }
+}
+
 .programs a:hover{
     text-decoration: none;
     color: #353a3a;
@@ -1041,6 +1076,12 @@ i.fa-minus {
 .material {
     border-color: #00bd8d;
     padding-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .material {
+        min-height: 235px;
+    }
 }
 
 .material:before {
