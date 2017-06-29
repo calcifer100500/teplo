@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>cta-buttons</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,18 +16,27 @@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
+                <div class="navbar-header navbar-fixed-top">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
                 <div class="menu-header">
                     <object class="logo" data="../img/logo6.svg"></object>
-                    <ul class="menu">
-                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                        <li><a href="#">Програми</a></li>
-                        <li><a href="#">Будинки</a></li>
-                        <li><a href="#">Калькулятори</a></li>
-                        <li><a href="#">Аналітика</a></li>
-                        <li><a href="#">Корисно</a></li>
-                        <li><a href="#">Куди звертатись</a></li>
-                    </ul>
                     <div class="scale-icon"><i class="fa fa-balance-scale" aria-hidden="true"></i></div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="menu">
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Програми</a></li>
+                            <li><a href="#">Будинки</a></li>
+                            <li><a href="#">Калькулятори</a></li>
+                            <li><a href="#">Аналітика</a></li>
+                            <li><a href="#">Корисно</a></li>
+                            <li><a href="#">Куди звертатись</a></li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -117,7 +127,7 @@
                         <div class="slide">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-5">
+                                    <div class="col-md-5 col-sm-5">
                                         <div class="scale-building">
                                             <object class="class-enrg" data="../img/class-b.svg"></object>
                                             <p><span class="vul">вул. Нагорна, 12</span><br>
@@ -134,8 +144,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-2"><object class="icon" data="../img/balance.svg"></object></div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-2 col-sm-2"><object class="icon" data="../img/balance.svg"></object></div>
+                                    <div class="col-md-5 col-sm-5">
                                         <div class="scale-building">
                                             <object class="class-enrg" data="../img/class-f.svg"></object>
                                             <p><span class="vul">вул. Нагорна, 14</span><br>
@@ -199,22 +209,22 @@
                     <div class="row-counter">
                         <div class="container">
                             <div class="row" id="count-up">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6">
                                     <span class="counter" data-count="11375">11275</span>
                                     <p>громадян долучилось
                                         до програм</p>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6">
                                     <span class="counter" data-count="1084">984</span>
                                     <p>вже будинки
                                         економлять тепло</p>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6">
                                     <span class="counter" data-count="1550000">1549900</span>
                                     <p>грн виділено з бюджету на
                                         енергоефективність у 2017 році</p>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6">
                                     <span class="counter" data-count="875000">874900</span>
                                     <p>грн використано на
                                         енергоефективність
@@ -237,7 +247,7 @@
         <div class="container">
             <div class="row">
                 <div class="cont-pad programs materials">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <a href="#"><div class="program material">
                             <h3>Як створити
                                 ОСББ</h3>
@@ -245,7 +255,7 @@
                                 Об’єднуймося!</p>
                         </div></a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <a href="#"><div class="program material">
                             <h3>Як управляти
                                 будинком</h3>
@@ -253,8 +263,8 @@
                                 спільна власність</p>
                         </div></a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#"><div class="program material">
+                    <div class="col-md-4 col-sm-6">
+                        <a href="#"><div class="program material third-program-sm">
                             <h3>Як відновити роботу
                                 будинкового лічильника</h3>
                             <p>Сім простих кроків для відновлення
@@ -266,27 +276,28 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="cont-pad partners">
-                    <h3>Партнери проекту</h3>
-                    <div class="col-md-2">
-                        <img src="../img/drupal.png" alt="drupal">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/github.png" alt="github">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/git.png" alt="git">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/nodejs.png" alt="nodejs">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/sony.png" alt="sony">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/unity.png" alt="unity">
-                    </div>
+                <div class="row">
+                    <div class="cont-pad partners">
+                        <h3>Партнери проекту</h3>
+                        <div class="col-md-2 col-sm-4">
+                            <img src="../img/drupal.png" alt="drupal">
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <img src="../img/github.png" alt="github">
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <img src="../img/git.png" alt="git">
+                        </div>
+
+                        <div class="col-md-2 col-sm-4">
+                            <img src="../img/nodejs.png" alt="nodejs">
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <img src="../img/sony.png" alt="sony">
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <img src="../img/unity.png" alt="unity">
+                        </div>
                 </div>
             </div>
         </div>
@@ -294,10 +305,10 @@
     <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-md-1 col-sm-1">
                 <object class="logo" data="../img/logo6.svg"></object>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="foot relative">
                     <h3><span>t</span>eplo.<span>o</span>rg.<span>u</span>a</h3>
                     <ul class="menu-footer">
@@ -311,7 +322,7 @@
                     <p>© 2016-2017</p>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 col-sm-7">
                 <div class="prog">
                     <ul class="menu-footer">
                         <li><a href="#">Програма 70/30. Енергоефективність</a></li>
@@ -326,46 +337,9 @@
 </footer>
 </div>
 
-
-
-<script>
-    $(document).ready(function() {
-
-        $('a').hoverIntent(function() {
-                $(this).removeClass('active');
-                setTimeout(function(){
-                    $(this).addClass('temp');
-                },500);
-            },
-            function() {
-                $(this).addClass('active');
-                $(this).removeClass('temp');
-            }
-        );
-
-    });
-</script>
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>
-    $(document).ready(function(){
-        $('.slider').slick({
-            variableWidth: true,
-            slidesToShow: 1,
-            dots: false,
-            infinite: true,
-            autoplay: false,
-            autoplaySpeed: 5000,
-            arrows: true,
-        });
-    });
-</script>
 
 <script>
     var a = 0;
@@ -399,6 +373,18 @@
             a = 1;
         }
 
+    });
+
+    $(document).ready(function(){
+        $('.slider').slick({
+            variableWidth: true,
+            slidesToShow: 1,
+            dots: false,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            arrows: true
+        });
     });
 </script>
 

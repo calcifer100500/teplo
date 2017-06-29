@@ -22,6 +22,12 @@ html, body {
     padding-bottom: 570px;
 }
 
+@media screen and (max-width: 991px) {
+    .content {
+        padding-bottom: 70px;
+    }
+}
+
 :active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
@@ -180,21 +186,34 @@ a:focus, a:hover {
 /* ----------------------------------- header ------------------------------------------ */
 /* --------------- menu --------------- */
 
+
+#myNavbar {
+    padding: 0;
+    height: 80px;
+    min-height: 80px;
+}
+
+@media screen and (max-width: 991px){
+    .menu {
+        padding-right: 58px;
+    }
+}
+
 .menu {
     width: 100%;
-    padding-top: 40px;
+    padding-top: 41px;
     background-color: #ffffff;
     border-bottom: 2px solid #ffb74d;
     float: left;
     list-style-type: none;
     padding-left: 140px;
+    min-height: 81px;
 }
 
 .menu>li {
     float: left;
     list-style-type: none;
     padding-left: 22px;
-    margin-bottom: 15px;
 }
 
 .menu>li>a {
@@ -202,6 +221,55 @@ a:focus, a:hover {
     font-size: 17px;
     font-weight: bold;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 980px) {
+    .menu>li {
+        padding-left: 15px;
+    }
+    .menu>li>a {
+        font-size: 16px;
+    }
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #353a3a;
+}
+
+.menu-header .navbar-nav>li>a,
+.menu-header .navbar-nav>li>a:hover {
+    background-color: transparent!important;
+}
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-top: 23px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-collapse.collapse.in {  /* NEW */
+        display: block!important;
+    }
 }
 
 .menu>li>a>i {
@@ -216,8 +284,8 @@ a:focus, a:hover {
     -ms-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
-    border-bottom: 2px solid #ff5014;
-    padding-bottom: 17px;
+    border-bottom: 2px solid #ff5014!important;
+    padding-bottom: 15px;
 }
 
 .cont-pad {
@@ -255,6 +323,10 @@ a:focus, a:hover {
     position: fixed;
     width: 100%;
     z-index: 100;
+    top: -1px;
+    height: 81px;
+    border-bottom: 2px solid #ffb74d;
+    background-color: #fff;
 }
 
 
@@ -265,14 +337,14 @@ a:focus, a:hover {
 .scale-icon {
     position: absolute;
     right: 8%;
-    top: 30px;
+    top: 24px;
     color: #cbd2d2;
     font-size: 24px;
 }
 
 @media screen and (max-width: 991px) {
     .scale-icon {
-        right: 5%;
+        right: 10%;
     }
 }
 
@@ -937,6 +1009,12 @@ i.fa-minus {
     margin-top: 5px;
 }
 
+@media screen and (max-width: 991px){
+    .scale-building {
+        min-height: 362px;
+    }
+}
+
 .scale-building > a{
     line-height: 43px;
 }
@@ -968,10 +1046,23 @@ i.fa-minus {
     right: 20px;
 }
 
+@media screen and (max-width: 991px) {
+    .icons {
+        position: static;
+    }
+}
+
 .icons li {
     height: 35px;
     display: block;
     margin-top: 18px;
+}
+
+@media screen and (max-width: 991px) {
+    .icons li {
+        display: inline-block;
+        width: 50px;
+    }
 }
 
 .icons li:last-child {
@@ -1037,6 +1128,12 @@ i.fa-minus {
     min-height: 265px;
 }
 
+@media screen and (max-width: 991px) {
+    #count-up {
+        padding-bottom: 35px;
+    }
+}
+
 .counter {
     display: block;
     font-size: 48px;
@@ -1084,6 +1181,18 @@ i.fa-minus {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .material {
+        min-height: 225px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .materials a>span {
+        margin-right: 70px;
+    }
+}
+
 .material:before {
     border-color: #00bd8d;
 }
@@ -1120,6 +1229,13 @@ i.fa-minus {
     z-index: 10;
 }
 
+@media screen and (max-width: 991px) {
+    .footer {
+        height: auto;
+        position: static;
+    }
+}
+
 .footer a:hover {
     text-decoration: underline;
 }
@@ -1151,6 +1267,12 @@ i.fa-minus {
     top: -15px;
 }
 
+@media screen and (max-width: 991px) {
+    .foot {
+        margin-left: 56px;
+    }
+}
+
 .foot a:hover{
     text-decoration: underline;
 }
@@ -1169,6 +1291,12 @@ i.fa-minus {
 
 .prog {
     margin-top: 65px;
+}
+
+@media screen and (max-width: 991px) {
+    .prog {
+        margin-left: 56px;
+    }
 }
 
 .prog a {
