@@ -138,6 +138,29 @@ a:focus, a:hover {
     z-index: 9;
 }
 
+.logo-min {
+    height: 81px;
+    margin-left: -20px;
+}
+
+@media screen and (min-width: 992px){
+    .logo {
+        display: block;
+    }
+    .logo-min {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .logo {
+        display: none;
+    }
+    .logo-min {
+        display: block;
+    }
+}
+
 .pipes {
     position: absolute;
     opacity: .7;
@@ -193,11 +216,6 @@ a:focus, a:hover {
     min-height: 80px;
 }
 
-@media screen and (max-width: 991px){
-    .menu {
-        padding-right: 58px;
-    }
-}
 
 .menu {
     width: 100%;
@@ -208,6 +226,16 @@ a:focus, a:hover {
     list-style-type: none;
     padding-left: 140px;
     min-height: 81px;
+}
+
+@media screen and (max-width: 991px){
+    .menu {
+        width: 200px;
+        padding: 80px 30px 20px 15px;
+        float: right;
+        border: none;
+        box-shadow: 8px 3px 7px #dadada;
+    }
 }
 
 .menu>li {
@@ -229,6 +257,14 @@ a:focus, a:hover {
     }
     .menu>li>a {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .menu>li {
+        display: block;
+        float: none;
+        padding-bottom: 15px;
     }
 }
 
@@ -327,6 +363,13 @@ a:focus, a:hover {
     height: 81px;
     border-bottom: 2px solid #ffb74d;
     background-color: #fff;
+}
+
+@media screen and (max-width: 991px){
+    .menu-header {
+        float: right;
+        display: block;
+    }
 }
 
 
