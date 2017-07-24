@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>404</title>
+    <link rel="icon" href="../img/fav/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/404.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="content dp">
+        <div class="container-fluid relative">
+            <div class="row">
+                <div class="img-container dead">
+                    <div class="pipes dead">
+                        <object data="../img/dead-pipe1.svg" class="pipe1 dead-pipe"></object>
+                        <object data="../img/dead-pipe3.svg" class="pipe3 dead-p3"></object>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="txt-main rip">
+                                <h1><span>4</span><span>0</span><span>4</span></h1>
+                                <h2>сторінка не існує</h2>
+                                <p>Можливо, вона видалена або змінилась її адреса. А може, її ніколи тут не було. Скористайтесь пошуком або поверніться на головну.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer ntfnd"></footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+    var a = 0;
+    $(window).scroll(function() {
+
+        var oTop = $('#count-up').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                        countNum: countTo
+                    },
+
+                    {
+
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+            });
+            a = 1;
+        }
+
+    });
+
+    $(document).ready(function(){
+        $('.slider').slick({
+            variableWidth: true,
+            slidesToShow: 1,
+            dots: false,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            arrows: true
+        });
+    });
+</script>
+
+</body>
+</html>

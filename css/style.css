@@ -100,6 +100,11 @@ h5 {
     font-size: 18px;
 }
 
+h6 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
 h2:first-child:after {
     content: '';
     display: inline-block;
@@ -681,7 +686,7 @@ input[type="submit"]:active {
 }
 
 .nav-tabs {
-    border-bottom: none;
+    border-bottom: 1px solid #ffc1ae;
     font-size: 16px;
     font-weight: 500;
     color: #353a3a;
@@ -761,6 +766,113 @@ i.fa-plus {
 
 i.fa-minus {
     color: #ff5014;
+}
+
+/*timeline tabs*/
+.timeline {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px #cececa;
+    margin-top: 15px;
+    margin-left: 123px;
+    min-height: 100px;
+
+}
+
+.timeline-txt {
+    display: inline-block;
+    position: absolute;
+}
+
+.timeline-txt.zv {
+    display: inline-block;
+    position: static;
+}
+
+.timeline-txt.zv>a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.status {
+    display: block;
+    padding: 10px 20px;
+    background-color: #37b38e;
+    color: #ffffff;
+    left: 138px;
+    top: 60px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: -20px 200px 10px -20px;
+}
+
+.vidp {
+    font-weight: 500;
+    display: block;
+    margin: 25px 0px 10px 0px;
+}
+
+.timeline-txt>h5 {
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.timeline-opys>img {
+    width: 160px;
+    padding-right: 20px;
+}
+
+.timeline-opys:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fdebe6;
+    width: 2px;
+    height: 100%;
+    left: 110px;
+    top: 50px;
+}
+
+.timeline-opys:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fdebe6;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: 105px;
+    margin-top: -110px;
+}
+
+.timeline-opys.af:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fdebe6;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: 105px;
+    margin-top: 0px;
+}
+
+.date-timeline {
+    position: absolute;
+    left: 15px;
+    text-align: center;
+    width: 100px;
+}
+
+.date-timeline>p {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 /* --------------------- blocks on main page ------------------------- */

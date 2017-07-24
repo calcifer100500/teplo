@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>cta-buttons-forms</title>
+    <link rel="icon" href="../img/fav/favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
+
 
 </head>
 <body>
@@ -49,9 +54,9 @@
         <div class="col-md-4">
             <form id="expert">
                 <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
-                <label alt='ПІБ' placeholder='ПІБ'></label>
+                <label alt='Іваненко Іванна Іванівна' placeholder='ПІБ'></label>
                 <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
-                <label alt='телефон' placeholder='телефон'></label>
+                <label alt='+38 066 234 56 78' placeholder='телефон'></label>
                 <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
                 <label alt='адреса' placeholder='адреса'></label>
                 <input type="text" required oninvalid="this.setCustomValidity('Будь ласка, заповніть це поле')" oninput="setCustomValidity('')" />
@@ -77,9 +82,9 @@
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#home" data-toggle="tab">Паспорт</a></li>
                 <li><a href="#profile" data-toggle="tab">Лічильники</a></li>
-                <li><a href="#profile" data-toggle="tab">Ремонти</a></li>
-                <li><a href="#profile" data-toggle="tab">Аварії</a></li>
-                <li><a href="#profile" data-toggle="tab">Звернення</a></li>
+                <li><a href="#remont" data-toggle="tab">Ремонти</a></li>
+                <li><a href="#avarii" data-toggle="tab">Аварії</a></li>
+                <li><a href="#zvern" data-toggle="tab">Звернення</a></li>
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade active in" id="home">
@@ -170,6 +175,142 @@
                         </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="tab-pane fade" id="remont">
+                    <ul>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>30</h3>
+                                <h6>липня</h6>
+                                <p>2016</p>
+                            </div>
+                            <div class="timeline-opys">
+                                <img src="../img/4840.jpg" alt="pidizd"/>
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>16</h3>
+                                <h6>листопада</h6>
+                                <p>2014</p>
+                            </div>
+                            <div class="timeline-opys">
+                                <img src="../img/4840.jpg" alt="pidizd"/>
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>22</h3>
+                                <h6>березня</h6>
+                                <p>2010</p>
+                            </div>
+                            <div class="timeline-opys">
+                                <img src="../img/4840.jpg" alt="pidizd"/>
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="avarii">
+                    <ul>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>30</h3>
+                                <h6>липня</h6>
+                                <p>2016</p>
+                            </div>
+                            <div class="timeline-opys af">
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>16</h3>
+                                <h6>листопада</h6>
+                                <p>2014</p>
+                            </div>
+                            <div class="timeline-opys af">
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>22</h3>
+                                <h6>березня</h6>
+                                <p>2010</p>
+                            </div>
+                            <div class="timeline-opys af">
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="zvern">
+                    <ul>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>30</h3>
+                                <h6>липня</h6>
+                                <p>2016</p>
+                            </div>
+                            <div class="timeline-opys af">
+                                <div class="timeline-txt zv">
+                                    <div class="status">В роботі</div>
+                                    <h5>Освітлення</h5>
+                                    <p>Немає освітлення в 2-му під'їзді</p>
+                                    <span class="vidp">Відповідальний:</span>
+                                    <a href="#"><p>ПАТ «Київгаз»</p></a>
+                                    <p>Сергій Олександрович Горовий</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>16</h3>
+                                <h6>листопада</h6>
+                                <p>2014</p>
+                            </div>
+                            <div class="timeline-opys af">
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="date-timeline">
+                                <h3>22</h3>
+                                <h6>березня</h6>
+                                <p>2010</p>
+                            </div>
+                            <div class="timeline-opys af">
+                                <div class="timeline-txt">
+                                    <h5>Ремонт під'їзду</h5>
+                                    <p>Це опис виконаних робіт</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

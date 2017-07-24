@@ -1,0 +1,32 @@
+.dead {
+    filter: grayscale(100%);
+    background-color: #e6e3e3;
+}
+
+.dead p {
+    padding-left: 250px;
+    padding-right: 220px;
+    padding-top: 30px;
+}
+
+object.pipe1.dead-pipe {
+    padding-top: 0px;
+}
+
+object.pipe3.dead-p3 {
+    padding-top: 0px;
+}
+
+.dp {
+    padding-bottom: 180px;
+}
+
+footer.footer.ntfnd {
+    height: 290px;
+    background-color: #e4e4e4;
+    border-top: 4px dashed #c7c7c7;
+}
+
+.rip {
+    padding-top: 100px;
+}
